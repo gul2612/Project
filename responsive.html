@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font: 14px Georgia,serif;
+        background: whitesmoke;
+    }
+    #fluid-wrap{
+        width: 70%;
+        margin: 60px auto;
+        padding: 20;
+        overflow: hidden;
+    }
+    #sidebar ul li a{
+        color:red;
+        text-decoration: none;
+        padding: 3px 0;
+        display:block;
+    }
+    #sidebar{
+        width:35%;
+        float: left;
+    }
+    #sidebar ul{
+        list-style: none;
+    }
+    #sidebar ul li a{
+        color:red;
+        text-decoration: none;
+        padding: 3px 0;
+        display: block;
+    }
+    @media all and (min-width:1001px)
+    {
+        #sidebar ul li a:after{
+            content: "("attr(data)")";
+            font-size: 11px;
+            font-style: italic;
+            color: gray;
+        }
+
+    }
+    @media all and (max-width:1000px) and (min-width:700px)
+    {
+        #sidebar ul li a:before{
+            content:"Email: ";
+            color: gray;
+            font-style: italic;
+        }
+    }
+    
+   #main-content{
+       width: 65%;
+       float: right;
+   }
+  
+</style>
+<body>
+    <div id=fluid-wrap>
+        <div id="sidebar">
+            <h3>My team:</h3>
+            <ul id="nav">
+                <li><a data="gulgnit2612@gmail.com" href="mailto:gulgnit2612@gmail.com">Gulshan</a></li>
+                <li><a data="blackdiamond@gmail.com" href="mailto:blackdiamond@gmail.com">Amisha</a></li>
+                <li><a data="2238sandeepkr@gmail.com" href="mailto:2238sandeepkr@gmail.com">sandeep</a></li>
+            </ul>
+        </div>
+        <div id="main-content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, possimus iusto. Nobis labore aut explicabo aliquid animi ratione distinctio blanditiis atque, culpa ab, ullam expedita earum enim. Consequuntur, facere incidunt?</p>
+            <p>L ipsum dolor sit amet consectetur adipisicing elit. Tempore, quae vitae rem necessitatibus quaerat laudantium veniam excepturi animi facere. Ipsa magni molestias voluptate! Quas aliquam magnam saepe delectus vitae quos repellat asperiores. Aliquam, praesentium.</p>
+        </div>
+        
+    </div>
+</body>
+</html>
